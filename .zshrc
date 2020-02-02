@@ -103,9 +103,10 @@ alias cdcrs="cd /media/pkmandke/DATA/ECE/courses/"
 alias gst="git status"
 alias gstu="git status -uno"
 alias gadd="git add"
-alias glogin="ssh glogin.cs.vt.edu"
-alias rlogin="ssh pkmandke@rlogin.cs.vt.edu"
 alias gcm="git commit -m"
+alias glogin="ssh glogin.cs.vt.edu"
+alias rlogin="ssh rlogin.cs.vt.edu"
+alias charon="ssh charon.cs.vt.edu"
 
 PATH=/usr/local/texlive/2019/bin/x86_64-linux:$PATH
 MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man:$MANPATH
