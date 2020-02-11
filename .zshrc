@@ -107,6 +107,8 @@ alias gcm="git commit -m"
 alias glogin="ssh glogin.cs.vt.edu"
 alias rlogin="ssh rlogin.cs.vt.edu"
 alias charon="ssh charon.cs.vt.edu"
+alias ca1="ssh cascades1.arc.vt.edu"
+alias ca2="ssh cascades2.arc.vt.edu"
 
 PATH=/usr/local/texlive/2019/bin/x86_64-linux:$PATH
 MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man:$MANPATH
