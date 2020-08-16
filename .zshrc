@@ -115,9 +115,9 @@ MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man:$MANPATH
 INFOPATH=/usr/local/texlive/2019/texmf-dist/doc/info:$INFOPATH
 
 # For virtualenv wrapper. Note that the order of the below commands is important
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=~/venv
-source /usr/local/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# export WORKON_HOME=~/venv
+# source /usr/local/bin/virtualenvwrapper.sh
 
 . ~/z.sh
 
