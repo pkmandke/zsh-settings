@@ -109,6 +109,9 @@ alias rlogin="ssh rlogin.cs.vt.edu"
 alias charon="ssh charon.cs.vt.edu"
 alias ca1="ssh cascades1.arc.vt.edu"
 alias ca2="ssh cascades2.arc.vt.edu"
+alias lpgml="ssh lambdapgml.cs.vt.edu"
+alias fslpgmlhome="sshfs lambdapgml.cs.vt.edu:/home/pkmandke ~/work/mounts/lambdapgml"
+alias fslpgmlraid="sshfs lambdapgml.cs.vt.edu:/raid/pkmandke ~/work/mounts/raid"
 
 PATH=/usr/local/texlive/2019/bin/x86_64-linux:$PATH
 MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man:$MANPATH
@@ -120,4 +123,26 @@ INFOPATH=/usr/local/texlive/2019/texmf-dist/doc/info:$INFOPATH
 # source /usr/local/bin/virtualenvwrapper.sh
 
 . ~/z.sh
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+# rvm
+export PATH="/home/pkmandke/gems/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/pkmandke/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/pkmandke/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/pkmandke/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/pkmandke/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
